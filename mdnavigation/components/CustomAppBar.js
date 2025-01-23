@@ -4,7 +4,8 @@ import { Appbar } from "react-native-paper";
 const CustomAppBar = ({ navigation, back }) => {
     return (
         <Appbar.Header>
-            {back? (
+            <Appbar.Content title="My App" />
+            {back ? (
                 <Appbar.BackAction onPress={navigation.goBack} />
             ) : (
                 <Appbar.Action
@@ -12,7 +13,6 @@ const CustomAppBar = ({ navigation, back }) => {
                    onPress={() => navigation.navigate('SecondScreen')}
                 />
             )}
-            <Appbar.Content title="My App" />
         </Appbar.Header>
     );
 };

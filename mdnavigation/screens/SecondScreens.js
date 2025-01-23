@@ -1,11 +1,12 @@
 import React from "react";
-import { View, Button, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
+import { Button } from "react-native-paper";
 
 const SecondScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Second Screen</Text>
-            <Button title="back" mode="contained" onPress={() => navigation.goBack()}></Button>
+            <Button mode="contained" onPress={() => navigation.goBack()}>Back</Button>
         </View>
     );
 };
